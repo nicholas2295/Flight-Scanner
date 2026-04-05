@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx create-next-app@latest . --typescript --tailwind --eslint --app --no-src-dir --import-alias=\"@/*\" --use-npm --yes)",
+      "Bash(npx create-next-app@latest hang-ban-scanner --typescript --tailwind --eslint --app --no-src-dir --import-alias=\"@/*\" --use-npm --yes)",
+      "Bash(shopt -s dotglob)",
+      "Bash(mv hang-ban-scanner/* .)",
+      "Bash(mv hang-ban-scanner/.gitignore .)",
+      "Bash(rm -rf hang-ban-scanner)",
+      "Bash(npx shadcn@latest init -y)",
+      "Bash(npm install:*)",
+      "Bash(npx shadcn@latest add button input select calendar popover card badge label --yes)",
+      "Bash(npm run:*)",
+      "WebFetch(domain:duffel.com)",
+      "WebFetch(domain:www.npmjs.com)",
+      "Bash(npx shadcn@latest add skeleton --yes)"
+    ]
+  }
+}
