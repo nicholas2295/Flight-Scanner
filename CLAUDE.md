@@ -129,7 +129,7 @@ Required traits:
 - obvious flexible-date / cheapest-period entry points where supported
 Prefer clarity over decoration.
 
-## Coding rules 
+## Coding rules  
 Bias for MVP speed, but keep the codebase maintainable.
 Do:
 - write small, composable modules
