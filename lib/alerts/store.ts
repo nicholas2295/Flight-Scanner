@@ -5,11 +5,11 @@ import type { AlertInput, FlightAlert } from "./types";
 const alerts = new Map<string, FlightAlert>();
 
 function randomId(): string {
-  return Math.random().toString(36).slice(2, 10);
+  return crypto.randomUUID().replace(/-/g, "").slice(0, 8);
 }
 
 function randomToken(): string {
-  return Math.random().toString(36).slice(2) + Math.random().toString(36).slice(2);
+  return crypto.randomUUID().replace(/-/g, "") + crypto.randomUUID().replace(/-/g, "");
 }
 
 export function createAlert(input: AlertInput): FlightAlert {
